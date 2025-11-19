@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact NextGen Gaming | Visit Our Gaming Hub in Johannesburg</title>
+    <meta name="description" content="Get in touch with NextGen Gaming. Visit our gaming hub in Braamfontein, Johannesburg. Contact us for gaming services, tournaments, and equipment inquiries.">
+    <meta name="keywords" content="contact NextGen Gaming, gaming hub Johannesburg, visit gaming center, gaming contact information, Braamfontein gaming">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Leaflet CSS for interactive map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="CSS/contact.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-gamepad" aria-hidden="true"></i>
+                    </div>
+                    <h1>NextGen <span>Gaming</span></h1>
+                </div>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
+                <nav id="mainNav">
+                    <ul>
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About Us</a></li>
+                        <li><a href="services.html" class="nav-link">Services</a></li>
+                        <li><a href="products.html" class="nav-link">Products</a></li>
+                        <li><a href="enquiry.html" class="nav-link">Enquiries</a></li>
+                        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Page Content -->
+    <main>
+        <section id="contact" class="page active">
+            <div class="container">
+                <div class="page-header">
+                    <h1>Contact NextGen Gaming</h1>
+                    <p>Get in touch with us or visit our premier gaming hub in Johannesburg</p>
+                </div>
+                
+                <div class="content-section">
+                    <h2>Our Gaming Hub Location</h2>
+                    <p>Visit our state-of-the-art gaming facility located in the heart of Braamfontein, Johannesburg. Easily accessible with ample parking and public transport options.</p>
+                    
+                    <div class="map-container">
+                        <div class="map-placeholder">
+                            <!-- Interactive map will be inserted here by JavaScript -->
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.0720681946273!2d28.0307763!3d-26.1943338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c1b37c5266f%3A0xc02a32ec7c998df8!2s30%20De%20Korte%20St%2C%20Braamfontein%2C%20Johannesburg%2C%202017%2C%20South%20Africa!5e0!3m2!1sen!2sie!4v1756108228667!5m2!1sen!2sie" 
+                                width="100%" 
+                                height="450" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="NextGen Gaming Location Map - 28 Korte Street, Braamfontein, Johannesburg">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        </div>
+                        <h3>Visit Our Gaming Hub</h3>
+                        <p>28 Korte Street, Braamfontein<br>Johannesburg, 2017<br>South Africa</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <h3>Call Us</h3>
+                        <p>+27 81 302 8654<br><small>Available 10:00 AM - 10:00 PM</small></p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <h3>Email Inquiries</h3>
+                        <p>info@nextgengaming.com<br><small>Response within 24 hours</small></p>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock" aria-hidden="true"></i>
+                        </div>
+                        <h3>Operating Hours</h3>
+                        <p>Monday - Sunday<br>10:00 AM - 10:00 PM<br><small>Extended hours for tournaments</small></p>
+                    </div>
+                </div>
+                
+                <div class="content-section">
+                    <h2>Send Us a Message</h2>
+                    <p>Have questions about our gaming services, tournaments, or equipment? Fill out the form below and our team will get back to you promptly.</p>
+                    
+                    <form id="contactForm" action="mailto:info@nextgengaming.com" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <label for="contactName">Full Name *</label>
+                            <input type="text" id="contactName" name="contactName" required aria-required="true" minlength="2">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactEmail">Email Address *</label>
+                            <input type="email" id="contactEmail" name="contactEmail" required aria-required="true">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactPhone">Phone Number</label>
+                            <input type="tel" id="contactPhone" name="contactPhone" pattern="[\+]?[0-9\s\-\(\)]+">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactSubject">Inquiry Type *</label>
+                            <select id="contactSubject" name="contactSubject" required aria-required="true">
+                                <option value="">Select an option</option>
+                                <option value="gaming-services">Gaming Services</option>
+                                <option value="tournaments">Tournament Information</option>
+                                <option value="products">Product Inquiries</option>
+                                <option value="group-bookings">Group Bookings</option>
+                                <option value="partnerships">Partnership Opportunities</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactMessage">Your Message *</label>
+                            <textarea id="contactMessage" name="contactMessage" required aria-required="true" minlength="10" placeholder="Tell us about your gaming needs or questions..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="loading" aria-hidden="true"></span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- FAQ Section -->
+                <div class="content-section">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="faq-container">
+                        <div class="faq-item">
+                            <h3>What are your parking facilities?</h3>
+                            <p>We have secure underground parking available for visitors, with ample space for vehicles. Parking is free for the first 2 hours for gaming customers.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Do you host private events?</h3>
+                            <p>Yes! We specialize in private gaming events for birthdays, corporate team building, and special occasions. Contact us for group booking options.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>What payment methods do you accept?</h3>
+                            <p>We accept cash, credit/debit cards, and digital payments including SnapScan and Zapper for your convenience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>NextGen Gaming</h3>
+                <p>Level Up Your Gaming Experience</p>
+                
+                <div class="social-links">
+                    <a href="#" aria-label="Visit our Twitter page"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Visit our Facebook page"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Visit our Instagram page"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Join our Discord server"><i class="fab fa-discord" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Watch us on Twitch"><i class="fab fa-twitch" aria-hidden="true"></i></a>
+                </div>
+                
+                <p>&copy; 2023 NextGen Gaming. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Leaflet JavaScript for interactive map -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    
+    <script src="Javascript/contact.js"></script>
+</body>
+</html>

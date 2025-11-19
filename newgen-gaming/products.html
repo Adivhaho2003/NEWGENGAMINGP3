@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Products & Equipment | NextGen Gaming - PCs, Laptops & Accessories</title>
+    <meta name="description" content="Shop premium gaming products at NextGen Gaming. High-performance gaming PCs, laptops, peripherals, chairs, and console accessories. Best prices in South Africa.">
+    <meta name="keywords" content="gaming PCs, gaming laptops, gaming peripherals, gaming chairs, console accessories, gaming merchandise, RTX gaming, gaming equipment South Africa">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/products.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-gamepad" aria-hidden="true"></i>
+                    </div>
+                    <h1>NextGen <span>Gaming</span></h1>
+                </div>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
+                <nav id="mainNav">
+                    <ul>
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About Us</a></li>
+                        <li><a href="services.html" class="nav-link">Services</a></li>
+                        <li><a href="products.html" class="nav-link active">Products</a></li>
+                        <li><a href="enquiry.html" class="nav-link">Enquiries</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Products Page Content -->
+    <main>
+        <section id="products" class="page active">
+            <div class="container">
+                <div class="page-header">
+                    <h1>Premium Gaming Products & Equipment</h1>
+                    <p>Discover our curated selection of high-performance gaming PCs, laptops, peripherals, and accessories</p>
+                </div>
+                
+                <!-- Search and Filter Section -->
+                <div class="products-controls">
+                    <div class="search-container">
+                        <input type="text" id="productSearch" placeholder="Search gaming products..." aria-label="Search products">
+                        <button class="btn btn-search" id="searchBtn" aria-label="Search">
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="filter-container">
+                        <select id="categoryFilter" aria-label="Filter by category">
+                            <option value="all">All Categories</option>
+                            <option value="pc">Gaming PCs</option>
+                            <option value="laptop">Gaming Laptops</option>
+                            <option value="peripheral">Gaming Peripherals</option>
+                            <option value="chair">Gaming Chairs</option>
+                            <option value="console">Console Accessories</option>
+                            <option value="merch">Gaming Merchandise</option>
+                        </select>
+                        <select id="priceFilter" aria-label="Filter by price range">
+                            <option value="all">All Prices</option>
+                            <option value="low">Under R1,000</option>
+                            <option value="medium">R1,000 - R5,000</option>
+                            <option value="high">Over R5,000</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="products-grid" id="productsGrid">
+                    <div class="product-card" data-category="pc" data-price="high">
+                        <div class="product-icon">
+                            <i class="fas fa-desktop" aria-hidden="true"></i>
+                        </div>
+                        <h2>High-Performance Gaming PCs</h2>
+                        <p>Custom-built gaming desktops with latest RTX graphics cards and powerful processors for maximum gaming performance.</p>
+                        <div class="price">Starting at R15,999</div>
+                        <div class="image-container">
+                            <img src="Images/download (14).jfif" alt="NextGen Pro Gaming PC with RGB lighting" data-fullsize="Images/download (14).jfif">
+                            <img src="Images/download (2).jfif" alt="Gaming PC setup with multiple monitors" data-fullsize="Images/download (2).jfif">
+                        </div>
+                        <div class="product-features">
+                            <span class="feature-tag">RTX 4080</span>
+                            <span class="feature-tag">32GB RAM</span>
+                            <span class="feature-tag">RGB Lighting</span>
+                        </div>
+                        <button class="btn btn-view-details">View Details & Specs</button>
+                    </div>
+                    
+                    <div class="product-card" data-category="laptop" data-price="high">
+                        <div class="product-icon">
+                            <i class="fas fa-laptop" aria-hidden="true"></i>
+                        </div>
+                        <h2>Portable Gaming Laptops</h2>
+                        <p>Powerful gaming laptops with high-refresh displays and advanced cooling for gaming on the go.</p>
+                        <div class="price">Starting at R12,499</div>
+                        <div class="image-container">
+                            <img src="Images/download (3).jfif" alt="NextGen Elite Gaming Laptop" data-fullsize="Images/download (3).jfif">
+                            <img src="Images/download (4).jfif" alt="Gaming laptop with RGB keyboard" data-fullsize="Images/download (4).jfif">
+                        </div>
+                        <div class="product-features">
+                            <span class="feature-tag">Portable</span>
+                            <span class="feature-tag">High Refresh Rate</span>
+                            <span class="feature-tag">Long Battery</span>
+                        </div>
+                        <button class="btn btn-view-details">View Details & Specs</button>
+                    </div>
+                    
+                    <div class="product-card" data-category="peripheral" data-price="medium">
+                        <div class="product-icon">
+                            <i class="fas fa-keyboard" aria-hidden="true"></i>
+                        </div>
+                        <h2>Gaming Peripherals Bundle</h2>
+                        <p>Mechanical keyboards, precision mice, and surround sound headsets for competitive gaming advantage.</p>
+                        <div class="price">From R899</div>
+                        <div class="image-container">
+                            <img src="Images/download (5).jfif" alt="Mechanical gaming keyboard with RGB" data-fullsize="Images/download (5).jfif">
+                            <img src="Images/download (6).jfif" alt="High-DPI gaming mouse" data-fullsize="Images/download (6).jfif">
+                        </div>
+                        <div class="product-features">
+                            <span class="feature-tag">Mechanical</span>
+                            <span class="feature-tag">RGB Lighting</span>
+                            <span class="feature-tag">Wireless</span>
+                        </div>
+                        <button class="btn btn-view-details">View Details & Specs</button>
+                    </div>
+                    
+                    <div class="product-card" data-category="chair" data-price="medium">
+                        <div class="product-icon">
+                            <i class="fas fa-chair" aria-hidden="true"></i>
+                        </div>
+                        <h2>Ergonomic Gaming Chairs</h2>
+                        <p>Premium gaming chairs with lumbar support and adjustable features for long gaming sessions.</p>
+                        <div class="price">From R2,499</div>
+                        <div class="image-container">
+                            <img src="Images/download (7).jfif" alt="Professional gaming chair with lumbar support" data-fullsize="Images/download (7).jfif">
+                            <img src="Images/download (6).jfif" alt="Gaming chair setup" data-fullsize="Images/download (6).jfif">
+                        </div>
+                        <div class="product-features">
+                            <span class="feature-tag">Ergonomic</span>
+                            <span class="feature-tag">Adjustable</span>
+                            <span class="feature-tag">Lumbar Support</span>
+                        </div>
+                        <button class="btn btn-view-details">View Details & Specs</button>
+                    </div>
+                    
+                    <div class="product-card" data-category="console" data-price="low">
+                        <div class="product-icon">
+                            <i class="fas fa-gamepad" aria-hidden="true"></i>
+                        </div>
+                        <h2>Console Gaming Accessories</h2>
+                        <p>Wireless controllers, gaming headsets, and accessories compatible with PlayStation and Xbox consoles.</p>
+                        <div class="price">From R699</div>
+                        <div class="image-container">
+                            <img src="Images/download (9).jfif" alt="Wireless console gaming controller" data-fullsize="Images/download (9).jfif">
+                            <img src="Images/images (6).jfif" alt="Console gaming accessories bundle" data-fullsize="Images/images (6).jfif">
+                        </div>
+                        <div class="product-features">
+                            <span class="feature-tag">Wireless</span>
+                            <span class="feature-tag">Multi-Platform</span>
+                            <span class="feature-tag">Durable</span>
+                        </div>
+                        <button class="btn btn-view-details">View Details & Specs</button>
+                    </div>
+                    
+                    <div class="product-card" data-category="merch" data-price="low">
+                        <div class="product-icon">
+                            <i class="fas fa-tshirt" aria-hidden="true"></i>
+                        </div>
+                        <h2>Gaming Merchandise Collection</h2>
+                        <p>Official NextGen Gaming apparel, collectibles, and limited edition gaming merchandise.</p>
+                        <div class="price">From R299</div>
+                        <div class="image-container">
+                            <img src="Images/p1.jpg" alt="NextGen Gaming merchandise and apparel" data-fullsize="Images/p1.jpg">
+                            <img src="Images/download (8).jfif" alt="Gaming merchandise collection" data-fullsize="Images/download (8).jfif">
+                        </div>
+                        <div class="product-features">
+                            <span class="feature-tag">Limited Edition</span>
+                            <span class="feature-tag">Premium Quality</span>
+                            <span class="feature-tag">Official</span>
+                        </div>
+                        <button class="btn btn-view-details">View Details & Specs</button>
+                    </div>
+                </div>
+                
+                <!-- Load More Button -->
+                <div class="load-more-container">
+                    <button class="btn btn-load-more" id="loadMoreBtn">Load More Gaming Products</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Product Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <span class="modal-close" id="modalClose" aria-label="Close product details">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- Modal content will be loaded here -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close" id="lightboxClose" aria-label="Close image viewer">&times;</span>
+            <img src="" alt="" id="lightboxImage">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>NextGen Gaming</h3>
+                <p>Level Up Your Gaming Experience</p>
+                
+                <div class="social-links">
+                    <a href="#" aria-label="Visit our Twitter page"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Visit our Facebook page"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Visit our Instagram page"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Join our Discord server"><i class="fab fa-discord" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Watch us on Twitch"><i class="fab fa-twitch" aria-hidden="true"></i></a>
+                </div>
+                
+                <p>&copy; 2023 NextGen Gaming. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Javascript/products.js"></script>
+</body>
+</html>

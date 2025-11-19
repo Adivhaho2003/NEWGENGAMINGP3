@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Services & Experiences | NextGen Gaming - Tournaments, VR & More</title>
+    <meta name="description" content="Premium gaming services at NextGen Gaming. High-end gaming stations, esports tournaments, VR experiences, workshops, and group bookings. Book your gaming experience today.">
+    <meta name="keywords" content="gaming services, esports tournaments, VR gaming, gaming workshops, group gaming events, gaming stations, PC gaming South Africa">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/services.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-gamepad" aria-hidden="true"></i>
+                    </div>
+                    <h1>NextGen <span>Gaming</span></h1>
+                </div>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
+                <nav id="mainNav">
+                    <ul>
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About Us</a></li>
+                        <li><a href="services.html" class="nav-link active">Services</a></li>
+                        <li><a href="products.html" class="nav-link">Products</a></li>
+                        <li><a href="enquiry.html" class="nav-link">Enquiries</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Page Content -->
+    <main>
+        <section id="services" class="page active">
+            <div class="container">
+                <div class="page-header">
+                    <h1>Premium Gaming Services & Experiences</h1>
+                    <p>Discover our comprehensive range of gaming services, from high-end gaming stations to professional esports tournaments</p>
+                </div>
+                
+                <!-- Service Search and Filter -->
+                <div class="services-controls">
+                    <div class="search-container">
+                        <input type="text" id="serviceSearch" placeholder="Search gaming services..." aria-label="Search services">
+                        <button class="btn btn-search" id="searchBtn" aria-label="Search">
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="filter-container">
+                        <select id="categoryFilter" aria-label="Filter services by category">
+                            <option value="all">All Categories</option>
+                            <option value="gaming">Gaming Stations</option>
+                            <option value="events">Tournaments & Events</option>
+                            <option value="group">Group Bookings</option>
+                            <option value="education">Gaming Workshops</option>
+                            <option value="vr">VR Experiences</option>
+                            <option value="cafe">Gaming Café</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Services Tabs -->
+                <div class="tabs-container">
+                    <div class="tabs" id="servicesTabs" role="tablist">
+                        <button class="tab-btn active" data-tab="all" role="tab" aria-selected="true">All Services</button>
+                        <button class="tab-btn" data-tab="gaming" role="tab" aria-selected="false">Gaming Stations</button>
+                        <button class="tab-btn" data-tab="events" role="tab" aria-selected="false">Events & Tournaments</button>
+                        <button class="tab-btn" data-tab="learning" role="tab" aria-selected="false">Learning & Workshops</button>
+                    </div>
+                </div>
+                
+                <div class="services-grid" id="servicesGrid">
+                    <div class="service-card" data-category="gaming" data-tab="gaming">
+                        <div class="service-icon">
+                            <i class="fas fa-desktop" aria-hidden="true"></i>
+                        </div>
+                        <h2>Premium Gaming Stations</h2>
+                        <p>High-end gaming PCs featuring RTX 4080 GPUs, 240Hz monitors, and mechanical keyboards for the ultimate gaming performance and experience.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">RTX 4080 Graphics</span>
+                            <span class="feature-tag">240Hz Monitors</span>
+                            <span class="feature-tag">Mechanical Keyboards</span>
+                        </div>
+                        <div class="image-container">
+                            <img src="Images/download (15).jfif" alt="High-end gaming station setup with RGB lighting" data-fullsize="Images/download (15).jfif" loading="lazy"> 
+                            <img src="Images/images (2).jfif" alt="Professional gaming station with multiple monitors" data-fullsize="Images/images (2).jfif" loading="lazy">
+                        </div>
+                        <div class="service-pricing">
+                            <div class="price">R120/hour</div>
+                            <div class="discount">Members: R90/hour</div>
+                        </div>
+                        <button class="btn btn-book">Book Gaming Station</button>
+                    </div>
+                    
+                    <div class="service-card" data-category="events" data-tab="events">
+                        <div class="service-icon">
+                            <i class="fas fa-trophy" aria-hidden="true"></i>
+                        </div>
+                        <h2>Esports Tournaments & Events</h2>
+                        <p>Regular competitive gaming tournaments with cash prizes, sponsored events, and community gaming nights for all skill levels.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Cash Prizes</span>
+                            <span class="feature-tag">Weekly Events</span>
+                            <span class="feature-tag">Community Driven</span>
+                        </div>
+                        <div class="image-container">
+                            <img src="Images/images (3).jfif" alt="Competitive esports tournament in progress" data-fullsize="Images/images (3).jfif" loading="lazy">
+                            <img src="Images/images (4).jfif" alt="Gaming tournament audience and setup" data-fullsize="Images/images (4).jfif" loading="lazy">
+                        </div>
+                        <div class="upcoming-events">
+                            <h3>Upcoming Tournaments</h3>
+                            <div class="event-item">
+                                <span class="event-date">Nov 25</span>
+                                <span class="event-name">Valorant Championship</span>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-date">Dec 2</span>
+                                <span class="event-name">Fortnite Friday</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-view-events">View Tournament Schedule</button>
+                    </div>
+                    
+                    <div class="service-card" data-category="group" data-tab="events">
+                        <div class="service-icon">
+                            <i class="fas fa-users" aria-hidden="true"></i>
+                        </div>
+                        <h2>Group Gaming Events</h2>
+                        <p>Perfect for birthday parties, corporate team building, and LAN parties with exclusive group discounts and private gaming areas.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Group Discounts</span>
+                            <span class="feature-tag">Private Rooms</span>
+                            <span class="feature-tag">Catering Options</span>
+                        </div>
+                        <div class="image-container">
+                            <img src="Images/images (2).jfif" alt="Group gaming event with multiple participants" data-fullsize="Images/images (2).jfif" loading="lazy">
+                            <img src="Images/images (1).jfif" alt="Corporate gaming team building event" data-fullsize="Images/images (1).jfif" loading="lazy">
+                        </div>
+                        <div class="group-pricing">
+                            <div class="price-option">
+                                <span class="group-size">2-4 People</span>
+                                <span class="group-price">R400/hour</span>
+                            </div>
+                            <div class="price-option">
+                                <span class="group-size">5-8 People</span>
+                                <span class="group-price">R700/hour</span>
+                            </div>
+                            <div class="price-option">
+                                <span class="group-size">9+ People</span>
+                                <span class="group-price">Contact for Quote</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-book-group">Book Group Event</button>
+                    </div>
+                    
+                    <div class="service-card" data-category="education" data-tab="learning">
+                        <div class="service-icon">
+                            <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                        </div>
+                        <h2>Gaming Workshops & Training</h2>
+                        <p>Learn from professional gamers with workshops on advanced strategies, streaming techniques, and PC building fundamentals.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Pro Coaches</span>
+                            <span class="feature-tag">Small Groups</span>
+                            <span class="feature-tag">Hands-on Learning</span>
+                        </div>
+                        <div class="image-container">
+                            <img src="Images/images (7).jfif" alt="Gaming workshop with instructor and participants" data-fullsize="Images/images (7).jfif" loading="lazy">
+                            <img src="Images/images (8).jfif" alt="PC building workshop session" data-fullsize="Images/images (8).jfif" loading="lazy">
+                        </div>
+                        <div class="workshop-schedule">
+                            <h3>Workshop Schedule</h3>
+                            <div class="workshop-item">
+                                <span class="workshop-day">Every Saturday</span>
+                                <span class="workshop-time">2:00 PM - 4:00 PM</span>
+                            </div>
+                            <div class="workshop-item">
+                                <span class="workshop-day">Every Wednesday</span>
+                                <span class="workshop-time">6:00 PM - 8:00 PM</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-register">Register for Workshop</button>
+                    </div>
+                    
+                    <div class="service-card" data-category="vr" data-tab="gaming">
+                        <div class="service-icon">
+                            <i class="fas fa-vr-cardboard" aria-hidden="true"></i>
+                        </div>
+                        <h2>Virtual Reality Experiences</h2>
+                        <p>Immerse yourself in cutting-edge virtual reality with our dedicated VR stations and latest immersive VR gaming titles.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Wireless VR</span>
+                            <span class="feature-tag">Latest Titles</span>
+                            <span class="feature-tag">Full Motion Tracking</span>
+                        </div>
+                        <div class="image-container">
+                            <img src="Images/download.jfif" alt="Virtual reality gaming experience in action" data-fullsize="Images/download.jfif" loading="lazy">
+                            <img src="Images/download (1).jfif" alt="VR gaming setup with headset and controllers" data-fullsize="Images/download (1).jfif" loading="lazy">
+                        </div>
+                        <div class="vr-pricing">
+                            <div class="price-option">
+                                <span class="session-type">30-min Session</span>
+                                <span class="session-price">R150</span>
+                            </div>
+                            <div class="price-option">
+                                <span class="session-type">1-hour Session</span>
+                                <span class="session-price">R250</span>
+                            </div>
+                            <div class="price-option">
+                                <span class="session-type">Multiplayer (2 people)</span>
+                                <span class="session-price">R400/hour</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-book-vr">Book VR Session</button>
+                    </div>
+                    
+                    <div class="service-card" data-category="cafe" data-tab="events">
+                        <div class="service-icon">
+                            <i class="fas fa-coffee" aria-hidden="true"></i>
+                        </div>
+                        <h2>Gaming Café & Refreshments</h2>
+                        <p>Enjoy premium snacks, energy drinks, and gaming-themed refreshments while you play in our comfortable gaming environment.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Energy Drinks</span>
+                            <span class="feature-tag">Gaming Snacks</span>
+                            <span class="feature-tag">Comfort Food</span>
+                        </div>
+                        <div class="image-container">
+                            <img src="Images/images (5).jfif" alt="Gaming café area with refreshments" data-fullsize="Images/images (5).jfif" loading="lazy">
+                            <img src="Images/images (6).jfif" alt="Gaming lounge with food and drinks" data-fullsize="Images/images (6).jfif" loading="lazy">
+                        </div>
+                        <div class="cafe-menu-preview">
+                            <h3>Popular Menu Items</h3>
+                            <div class="menu-item">
+                                <span class="item-name">Gamer's Energy Drink</span>
+                                <span class="item-price">R35</span>
+                            </div>
+                            <div class="menu-item">
+                                <span class="item-name">Premium Pizza Slice</span>
+                                <span class="item-price">R45</span>
+                            </div>
+                            <div class="menu-item">
+                                <span class="item-name">Buffalo Wings</span>
+                                <span class="item-price">R85</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-view-menu">View Full Menu</button>
+                    </div>
+                </div>
+                
+                <!-- Dynamic Content Section -->
+                <div class="content-section">
+                    <h2>Upcoming Gaming Events Calendar</h2>
+                    <div class="events-calendar" id="eventsCalendar">
+                        <!-- Events will be loaded dynamically -->
+                    </div>
+                    <button class="btn btn-load-more" id="loadMoreEvents">Load More Events</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Booking Modal -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <span class="modal-close" id="modalClose" aria-label="Close booking form">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- Modal content will be loaded here -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close" id="lightboxClose" aria-label="Close image viewer">&times;</span>
+            <img src="" alt="" id="lightboxImage">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>NextGen Gaming</h3>
+                <p>Level Up Your Gaming Experience</p>
+                
+                <div class="social-links">
+                    <a href="#" aria-label="Visit our Twitter page"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Visit our Facebook page"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Visit our Instagram page"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Join our Discord server"><i class="fab fa-discord" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Watch us on Twitch"><i class="fab fa-twitch" aria-hidden="true"></i></a>
+                </div>
+                
+                <p>&copy; 2023 NextGen Gaming. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Javascript/services.js"></script>
+</body>
+</html>
